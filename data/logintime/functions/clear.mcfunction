@@ -1,0 +1,1 @@
+clear @a minecraft:cooked_salmon{bonus:1b}
