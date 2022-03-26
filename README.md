@@ -1,4 +1,4 @@
-# logintime [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/ProjectTDM/logintime) <!-- ![ダウンロード数](https://img.shields.io/github/downloads/tunakaniri/keiba-assistant/total) -->
+# Login Time <!-- ![ダウンロード数](https://img.shields.io/github/downloads/tunakaniri/keiba-assistant/total) -->
 ![マイクラバージョン](https://img.shields.io/badge/Minecraft%20Ver-Java%201.18~1.18.1-brightgreen) ![タイプ](https://img.shields.io/badge/Type-datapack-orange) [![必須](https://img.shields.io/badge/Required-tunakan--resourcepack-blue)](../../../tunakan-resourcepack) ![管理者権限](https://img.shields.io/badge/Need%20OP-None-lightgrey)
 
 一時間おきに鮭とば(焼き鮭)がもらえるデータパック
