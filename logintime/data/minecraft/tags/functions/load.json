@@ -1,3 +1,5 @@
 {
-	"values": ["logintime:load"]
+  "values":[
+    "logintime:sys/load"
+  ]
 }

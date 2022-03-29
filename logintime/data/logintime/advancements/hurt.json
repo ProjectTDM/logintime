@@ -1,0 +1,85 @@
+{
+  "criteria": {
+    "sharpness": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:cooked_salmon"
+                  ],
+                  "nbt": "{tag:loginbonus}",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:sharpness"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "damage": {},
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player"
+            }
+          }
+        ]
+      }
+    },
+    "knockback": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:cooked_salmon"
+                  ],
+                  "nbt": "{tag:loginbonus}",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:knockback"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "damage": {},
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sharpness",
+      "knockback"
+    ]
+  ],
+  "rewards": {
+    "function": "logintime:punishment/"
+  }
+}

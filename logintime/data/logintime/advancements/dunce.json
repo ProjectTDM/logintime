@@ -1,0 +1,23 @@
+{
+  "criteria":{
+    "requirement":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "player":{
+          "team":"logindunce"
+        },
+        "items":[
+          {
+            "items":[
+              "minecraft:cooked_salmon"
+            ],
+            "nbt":"{tag:loginbonus}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{
+    "function":"logintime:sys/clear"
+  }
+}
