@@ -6,3 +6,5 @@ scoreboard players add @s login.count 1
 loot spawn ~ ~ ~ loot logintime:bonus
 # ボーナスを与えたことを表示
 tellraw @s {"translate":"tellraw.logintime.bonus","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"login.count"},"color":"gold"},{"translate":"tellraw.logintime.time","color":"gold"}]}
+# オーバーフローしたか検知
+execute if score @s login.count matches -2147483648 run function logintime:bonus/overflow

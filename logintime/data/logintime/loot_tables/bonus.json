@@ -17,6 +17,24 @@
               }
             },
             {
+              "function":"minecraft:set_name",
+              "entity":"this",
+              "name":{
+                "translate":"item.logintime.overflow",
+                "color":"gold",
+                "italic":false
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":-2147483648
+                  }
+                }
+              ]
+            },
+            {
               "function":"minecraft:set_lore",
               "entity":"this",
               "lore":[
@@ -66,7 +84,69 @@
                     "scale":0.3
                   }
                 }
-              }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":1,
+                      "max":109223
+                    }
+                  }
+                },
+                {
+                  "condition":"minecraft:random_chance",
+                  "chance":0.5
+                }
+              ]
+            },
+            {
+              "function":"minecraft:set_enchantments",
+              "enchantments":{
+                "minecraft:sharpness":{
+                  "min":0,
+                  "max":32767
+                }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":109224,
+                      "max":2147483647
+                    }
+                  }
+                },
+                {
+                  "condition":"minecraft:random_chance",
+                  "chance":0.5
+                }
+              ]
+            },
+            {
+              "function":"minecraft:set_enchantments",
+              "enchantments":{
+                "minecraft:sharpness":{
+                  "min":0,
+                  "max":32767
+                }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":-2147483648,
+                      "max":0
+                    }
+                  }
+                }
+              ]
             },
             {
               "function":"minecraft:set_enchantments",
@@ -76,10 +156,73 @@
                   "max":{
                     "type":"minecraft:score",
                     "target":"this",
-                    "score":"login.count"
+                    "score":"login.count",
+                    "scale":0.3
                   }
                 }
-              }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":1,
+                      "max":109223
+                    }
+                  }
+                },
+                {
+                  "condition":"minecraft:random_chance",
+                  "chance":0.5
+                }
+              ]
+            },
+            {
+              "function":"minecraft:set_enchantments",
+              "enchantments":{
+                "minecraft:knockback":{
+                  "min":0,
+                  "max":32767
+                }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":109224,
+                      "max":2147483647
+                    }
+                  }
+                },
+                {
+                  "condition":"minecraft:random_chance",
+                  "chance":0.5
+                }
+              ]
+            },
+            {
+              "function":"minecraft:set_enchantments",
+              "enchantments":{
+                "minecraft:knockback":{
+                  "min":0,
+                  "max":32767
+                }
+              },
+              "conditions":[
+                {
+                  "condition":"minecraft:entity_scores",
+                  "entity":"this",
+                  "scores":{
+                    "login.count":{
+                      "min":-2147483648,
+                      "max":0
+                    }
+                  }
+                }
+              ]
             },
             {
               "function":"minecraft:set_nbt",
