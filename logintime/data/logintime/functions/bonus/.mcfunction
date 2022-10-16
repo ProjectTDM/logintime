@@ -3,7 +3,7 @@ scoreboard players reset @s login.time
 # ボーナスを受け取った回数を増やす
 scoreboard players add @s login.count 1
 # login.countを参考にしてボーナスを与える
-loot spawn ~ ~ ~ loot logintime:bonus
+loot give @s loot logintime:bonus
 # ボーナスを与えたことを表示
 tellraw @s {"translate":"tellraw.logintime.bonus","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"login.count"},"color":"gold"},{"translate":"tellraw.logintime.time","color":"gold"}]}
 # オーバーフローしたか検知
