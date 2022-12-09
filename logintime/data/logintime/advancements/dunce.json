@@ -1,7 +1,7 @@
 {
   "criteria":{
     "requirement":{
-      "trigger":"minecraft:inventory_changed",
+      "trigger":"inventory_changed",
       "conditions":{
         "player":{
           "team":"logindunce"
@@ -9,7 +9,7 @@
         "items":[
           {
             "items":[
-              "minecraft:cooked_salmon"
+              "cooked_salmon"
             ],
             "nbt":"{tag:loginbonus}"
           }

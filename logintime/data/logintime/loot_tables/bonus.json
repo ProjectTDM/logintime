@@ -4,11 +4,11 @@
       "rolls":1,
       "entries":[
         {
-          "type":"minecraft:item",
-          "name":"minecraft:cooked_salmon",
+          "type":"item",
+          "name":"cooked_salmon",
           "functions":[
             {
-              "function":"minecraft:set_name",
+              "function":"set_name",
               "entity":"this",
               "name":{
                 "translate":"item.logintime.bonussalmon.name",
@@ -17,7 +17,7 @@
               }
             },
             {
-              "function":"minecraft:set_name",
+              "function":"set_name",
               "entity":"this",
               "name":{
                 "translate":"item.logintime.overflow",
@@ -26,7 +26,7 @@
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":-2147483648
@@ -35,7 +35,7 @@
               ]
             },
             {
-              "function":"minecraft:set_lore",
+              "function":"set_lore",
               "entity":"this",
               "lore":[
                 {
@@ -46,7 +46,7 @@
               ]
             },
             {
-              "function":"minecraft:set_lore",
+              "function":"set_lore",
               "entity":"this",
               "lore":[
                 {
@@ -57,7 +57,7 @@
               ]
             },
             {
-              "function":"minecraft:set_lore",
+              "function":"set_lore",
               "entity":"this",
               "lore":[
                 {
@@ -73,12 +73,12 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:sharpness":{
+                "sharpness":{
                   "min":0,
                   "max":{
-                    "type":"minecraft:score",
+                    "type":"score",
                     "target":"this",
                     "score":"login.count",
                     "scale":0.3
@@ -87,7 +87,7 @@
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -99,16 +99,16 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:sharpness":{
+                "sharpness":{
                   "min":0,
                   "max":32767
                 }
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -120,16 +120,16 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:sharpness":{
+                "sharpness":{
                   "min":0,
                   "max":32767
                 }
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -141,12 +141,12 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:knockback":{
+                "knockback":{
                   "min":0,
                   "max":{
-                    "type":"minecraft:score",
+                    "type":"score",
                     "target":"this",
                     "score":"login.count",
                     "scale":0.3
@@ -155,7 +155,7 @@
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -167,16 +167,16 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:knockback":{
+                "knockback":{
                   "min":0,
                   "max":32767
                 }
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -188,16 +188,16 @@
               ]
             },
             {
-              "function":"minecraft:set_enchantments",
+              "function":"set_enchantments",
               "enchantments":{
-                "minecraft:knockback":{
+                "knockback":{
                   "min":0,
                   "max":32767
                 }
               },
               "conditions":[
                 {
-                  "condition":"minecraft:entity_scores",
+                  "condition":"entity_scores",
                   "entity":"this",
                   "scores":{
                     "login.count":{
@@ -209,17 +209,17 @@
               ]
             },
             {
-              "function":"minecraft:set_nbt",
+              "function":"set_nbt",
               "tag":"{Unbreakable:1}",
               "conditions":[
                 {
-                  "condition":"minecraft:random_chance",
+                  "condition":"random_chance",
                   "chance":0.1
                 }
               ]
             },
             {
-              "function":"minecraft:set_nbt",
+              "function":"set_nbt",
               "tag":"{tag:loginbonus}"
             }
           ]
