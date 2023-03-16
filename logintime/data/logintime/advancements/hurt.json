@@ -1,22 +1,22 @@
 {
-  "criteria":{
-    "sharpness":{
-      "trigger":"player_hurt_entity",
-      "conditions":{
-        "player":[
+  "criteria": {
+    "sharpness": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "player": [
           {
-            "condition":"entity_properties",
-            "entity":"this",
-            "predicate":{
-              "equipment":{
-                "mainhand":{
-                  "items":[
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
                     "cooked_salmon"
                   ],
-                  "nbt":"{tag:loginbonus}",
-                  "enchantments":[
+                  "nbt": "{tag:loginbonus}",
+                  "enchantments": [
                     {
-                      "enchantment":"sharpness"
+                      "enchantment": "sharpness"
                     }
                   ]
                 }
@@ -24,35 +24,35 @@
             }
           }
         ],
-        "damage":{},
-        "entity":[
+        "damage": {},
+        "entity": [
           {
-            "condition":"entity_properties",
-            "entity":"this",
-            "predicate":{
-              "type":"player"
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "player"
             }
           }
         ]
       }
     },
-    "knockback":{
-      "trigger":"player_hurt_entity",
-      "conditions":{
-        "player":[
+    "knockback": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "player": [
           {
-            "condition":"entity_properties",
-            "entity":"this",
-            "predicate":{
-              "equipment":{
-                "mainhand":{
-                  "items":[
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
                     "cooked_salmon"
                   ],
-                  "nbt":"{tag:loginbonus}",
-                  "enchantments":[
+                  "nbt": "{tag:loginbonus}",
+                  "enchantments": [
                     {
-                      "enchantment":"knockback"
+                      "enchantment": "knockback"
                     }
                   ]
                 }
@@ -60,26 +60,26 @@
             }
           }
         ],
-        "damage":{},
-        "entity":[
+        "damage": {},
+        "entity": [
           {
-            "condition":"entity_properties",
-            "entity":"this",
-            "predicate":{
-              "type":"player"
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "player"
             }
           }
         ]
       }
     }
   },
-  "requirements":[
+  "requirements": [
     [
       "sharpness",
       "knockback"
     ]
   ],
-  "rewards":{
-    "function":"logintime:punishment/"
+  "rewards": {
+    "function": "logintime:punishment/"
   }
 }
