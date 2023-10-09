@@ -9,10 +9,9 @@ data remove storage logintime: installed
 data remove storage logintime: punishment
 data remove storage logintime: ver
 # tagの削除
-tag @a remove loginforgive
 tag @a remove loginpunishment
 # アイテムの削除
-function logintime:clear
+function logintime:clear_bonus_all
 # データパックの無効化
 datapack disable "file/logintime"
 datapack disable "file/logintime.zip"

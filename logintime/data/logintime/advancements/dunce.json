@@ -1,23 +1,23 @@
 {
-  "criteria":{
-    "requirement":{
-      "trigger":"inventory_changed",
-      "conditions":{
-        "player":{
-          "team":"logindunce"
+  "criteria": {
+    "requirement": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "player": {
+          "team": "logindunce"
         },
-        "items":[
+        "items": [
           {
-            "items":[
+            "items": [
               "cooked_salmon"
             ],
-            "nbt":"{tag:loginbonus}"
+            "nbt": "{tag:loginbonus}"
           }
         ]
       }
     }
   },
-  "rewards":{
-    "function":"logintime:sys/clear"
+  "rewards": {
+    "function": "logintime:sys/clear"
   }
 }

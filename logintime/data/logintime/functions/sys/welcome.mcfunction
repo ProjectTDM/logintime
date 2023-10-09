@@ -17,5 +17,5 @@ function logintime:default
 # インストール済みにする
 data modify storage logintime: installed set value 1
 # インストール完了メッセージ(リソースパック必須)
-tellraw @a {"translate":"tellraw.tunakan.welcome","with":[{"translate":"tellraw.logintime.welcome","color":"gold"}]}
+tellraw @a {"translate":"tellraw.tunakan.welcome","with":[{"translate":"tellraw.logintime.welcome","color":"gold","with":[{"text": ""}]}]}
 tellraw @a {"translate":"tellraw.tunakan.creator","with":[{"text":"ツナ缶入りマザボ","color":"green"}]}
